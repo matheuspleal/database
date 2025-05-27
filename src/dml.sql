@@ -16,7 +16,7 @@ insert into order_items (id, order_id, product_id, quantity) values
 (3, 2, 2, 1),  -- Jane comprou 1 Mouse
 (4, 2, 3, 1);  -- Jane comprou 1 Teclado
 
-select * from customers;
+select * from customers WHERE id = ?;
 
 select 
 	i.id as order_id,
